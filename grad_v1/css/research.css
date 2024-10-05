@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+h2 {
+    margin-top: 20px;
+    font-size: 15px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin: 5px 0;
+}
+#question{
+    text-align: center;
+    margin: 50px auto; /* 上下0、左右autoで中央揃え */
+    width: fit-content; /* 要素の幅が収まるサイズ */
+    font-size: 20px;
+}
+
+#question-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+#question1, #question2, #question3, #question4, #question5, #question6, #question7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(219, 74, 43, 0.5); /* 透明度を0.7に設定 */
+    border-radius: 20px;
+    width: 700px;
+    height: 400px;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+
+#food, #drink, #who, #frequency, #importance, #mind, #space{
+    padding-bottom: 20px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+#oa{
+    width: 200px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+#send, #back, #submit{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: lightblue;
+    margin: 10px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    width: 100%;
+}

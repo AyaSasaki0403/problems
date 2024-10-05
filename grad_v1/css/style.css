@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+  margin-top: 100px; /* ヘッダーの高さ */
+  padding-top: 100px; /* ヘッダーの高さと同じ分だけ余白を追加 */
+}
+
+.top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/* サービス紹介 */
+.explanation{
+  width: 90%;
+  display: flex;
+  border-bottom: 2px solid gray;
+}
+
+.exp{
+  margin-top: 50px;
+  max-width: 60%;
+  padding-right: 50px;
+}
+
+#exp-title1, #exp-title2{
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#forth{
+  font-size: 12px;
+}
+
+#map{
+  width: 40%;
+  max-width: 500px;
+  height: auto;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+/* できることリスト */
+.service {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  border-bottom: 2px solid gray;
+  margin: 50px 0;
+  padding-bottom: 50px;
+}
+
+.service-box{
+  margin-inline: 10px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #e0f0ff;
+  border-radius: 20px;
+  width: 300px;
+  height: 350px;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+}
+
+#point1, #point2, #point3{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#service1_pic, #service2_pic, #service3_pic{
+  width: 280px;
+  
+} 
+
+/* 会員登録 */
+.memberReg {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  width: 100%;
+}
+
+.form-container {
+  background-color: #e0f0ff;
+  padding: 20px;
+  padding-top: 40px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.form-group label {
+  font-size: 14px;
+  width: 30%;
+}
+
+.form-group input[type="text"]{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  width: 500px;
+}
+
+.form-group .input-wrapper input[type="radio"]  {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="radio"] {
+  margin-right: 5px;
+  width: auto;
+}
+
+.form-group input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 500px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"]{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  width: 500px;
+}
+
+.gender-options {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: blue;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  align-self: center;
+  margin: 20px 0; /* Add margin for spacing */
+}
+
+button:hover {
+  background-color: rgba(219, 74, 43, 0.5);
+}

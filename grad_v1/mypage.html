@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マイページ</title>
+    <link rel="stylesheet" href="css/mypage.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/user.js"></script> 
+    <script src="js/calendar.js"></script> 
+    <script src="js/modal.js"></script> 
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="mypage.html" id="mypage_logo"><img src="image/burdies_diary.png" alt="diary_logo" id="diary_logo"></a>
+
+            <nav>
+                <ul>
+                    <!-- ユーザー名を表示 -->
+                    <li><a href="#" id="username-link"></a></li>
+
+                    <!-- 日記登録画面へのリンク -->
+                    <li><a href="#" id="openMemoryModal">思い出を登録する</a></li>
+
+                    <!-- ログアウトボタン -->
+                    <li><a href="logout_act.php" id="logout_link">ログアウト</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<div class="calendar-container">
+
+    <div id="calendar-content">
+        <div id="calendar-header">
+            <button id="prevMonth">前月</button>
+            <h2 id="monthYear"></h2>
+            <button id="nextMonth">翌月</button>
+        </div>
+
+    <div id="calendar">
+        <table>
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody id="calendar-body">
+                <!-- カレンダーの日付がここに動的に生成される -->
+            </tbody>
+        </table>
+    </div>
+    </div>
+    
+    <div id="year-month-list">
+        <!-- 年月リストがここに動的に生成されます -->
+    </div>
+
+    <script>
+        console.log("HTMLからのログ: JavaScriptは動作しています");
+    </script>
+
+</div>
+
+
+<div class="memory-container">
+    <button id="openMemoryModal2">思い出を登録</button>
+</div>
+<!-- modal -->
+<div id="memoryModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <main class="register_container">
+            <div class="memory">
+
+        <!-- 画像の投稿 -->
+        <div id="picture_box">
+            <label for="image">写真</label>
+            <input type="file" id="image" name="image">
+            <img id="imagePreview" src="" alt="プレビュー画像" style="display: none;">        </div>
+
+        <div id="date_box">
+            <label for="regiDate">日付</label>
+            <input type="date" id="regiDate" name="regiDate">
+        </div>
+
+        <div id="place_box">
+            <label for="place">場所</label>
+            <input type="text" id="place" placeholder="訪問場所を入力">
+        </div>
+
+        <div id="withWho_box">
+            <label for="withWho">誰と</label>
+            <input type="text" id="withWho" name="withWho">
+        </div>
+
+        <!-- 公開のon/off入れるか検討 -->
+        <div id="publish_box" class="publish-container">
+            <label for="publish">公開</label>
+            <label class="switch">
+                <input type="checkbox" id="publish" name="publish">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div id="memo_box">
+            <label for="memo">思い出メモ</label>
+            <input type="text" id="memo" name="memo">
+        </div>
+
+        <div class="button-container">
+            <button id="save">登録</button>
+        </div>
+    </div>
+</main>
+</div>
+</div>
+
+<div id="data-display-area"></div>
+
+
+    
+</body>
+</html>

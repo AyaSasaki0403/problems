@@ -1,0 +1,208 @@
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    z-index: 1000;
+    background-color: #f0f0f0;
+    /* pointer-events: auto;  */
+}
+  
+  #diary_logo {
+    width: 350px;
+    height: auto;
+  }
+  
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin-left: 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    color: black;
+  }
+  
+  nav ul li a:hover {
+    color: #db4a2b; /* マウスオーバー時の色 */
+  }
+
+  /* calender */
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+}
+
+#calendar-content {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.calendar-container, #calendar-content, #prevMonth, #nextMonth {
+    pointer-events: auto;
+}
+
+#calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+#calendar-header h2{
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#calendar {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* カレンダーのセルに表示される星のスタイル */
+td.starred {
+    font-size: 20px;
+    color: black; 
+    text-align: center; 
+    vertical-align: middle; 
+}
+
+/* カレンダーのセルに表示される日付セルの背景色を変更する */
+/* td.highlighted {
+    background-color: #f39c12 !important; 
+    color: white; 
+    text-align: center;
+    vertical-align: middle;
+} */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 14.28%;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f0f0f0;
+    height: 12px;
+}
+
+td {
+    height: 30px;
+    vertical-align: top;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px; /* 基本のフォントサイズ */
+}
+
+td.holiday {
+    background-color: #f9e6e6;
+}
+
+button {
+    height: 25px;
+    width: 80px;
+    font-size: 12px;
+    background-color: rgba(219, 74, 43, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+
+.memory-container{
+    text-align: center;
+    margin-top: -130px;
+    position: relative;
+    z-index: 1;
+    top: 50px;
+}
+
+#openMemoryModal2{
+    height: 50px;
+    width: 150px;
+    margin: 0;
+    position: relative;
+}
+
+/* 表示エリアのスタイル */
+#data-display-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* 各データの間隔を空ける */
+    justify-content: center;
+    margin-top: 80px;
+    font-size: 13px;
+}
+
+.memory-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data-image {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0; /* 画像のない部分の背景色を指定（任意） */
+    overflow: hidden; /* 画像がはみ出さないように */
+}
+
+.data-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* 画像全体を表示する */
+}
+
+.data-details {
+    text-align: left;
+    width: 100%;
+}
+
+.data-details p {
+    margin: 5px 0;
+}

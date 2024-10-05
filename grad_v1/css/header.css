@@ -1,0 +1,45 @@
+header {
+  width: 100%;
+  display: flex;
+  align-items: center; /* 垂直方向に中央揃え */
+  padding: 0 30px;
+  background-color: #f0f0f0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px;
+  z-index: 1000;
+}
+
+#logo {
+  width: 300px;
+  height: auto;
+  margin-right: auto; /* logoを左に固定 */
+}
+
+nav {
+  margin-right: 50px; /* navを右側に50pxの余白 */
+  display: flex;
+  align-items: center; /* nav内の要素を中央揃え */
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 20px; /* リストアイテム間の余白 */
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  color: black;
+}
+
+nav a:hover {
+  color: #db4a2b; /* マウスオーバー時の色 */
+}

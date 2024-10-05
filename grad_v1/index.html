@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burdies</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <link rel="stylesheet" href="css/header.css">
+        <nav>
+        <a href="index.html" id="logo-link"><img src="image/burdies.png" alt="Logo" id="logo"></a>
+    
+            <ul>
+                <li><a href="index.html#about">Burdiesとは</a></li>
+                <li><a href="index.html#service">Burdies でできること</a></li>
+                <li><a href="index.html#register" id="register_link">Burdyになる</a></li>
+                <li><a href="login_act.html" id="login_link">ログイン</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- サービス紹介全体 -->
+<div class = "top-container" id="about">
+
+    <!-- サービス紹介文 -->
+    <div class="explanation">
+        <div class = "exp">
+            <p id = "exp-title1">Burdies とは</p><br>
+            <p id = "first">現地にいるあなたと好みが似ているBurdy（バーディー）が、旅先にあるあなたの好みの飲食店やショップをはじめとする "おすすめスポット" を教えてくれます。</p><br>
+            <p id = "second">よりあなたの好み合ったおすすめスポットを紹介してもらうためには、ありとあらゆるあなたの "好き" を「Burdy Diary（バーディーダイアリー）」に登録してください。あなたの日常の "好き" を登録すればするほど、Buridiesの精度が上がります！</p><br>
+            <p id = "exp-title2">みんなの"好き"が作り出す あなただけのおすすめリスト</p><br>
+            <p id = "third">Buridiesが紹介するおすすめスポットは、広告やインフルエンサーを使って優先的に表示、オススメしてもらうことができません。Burdiesで紹介されるスポットは、純粋にBurdiesの "好き" からできています。</p><br>
+            <p id = "forth">※Burdiesにインセンティブを払って投稿などを促す行為を行なった飲食店やショップなどは、厳しいペナルティが課されます。</p>
+        </div>
+
+        <img src="image/map.png" alt="map" id="map">
+    </div>
+
+    <!-- できることリスト -->
+    <div class = "service" id="service"> burdies でできること</div>
+
+        <div class = "service-container">
+            <div class = "service-box">
+                <p id = "point1">ポイント１</p>
+                <p id = "service1">ローカル（現地）の人が通う<br> "おすすめスポット" に出会える</p>
+                <img src="image/what_you_can_do1.png" alt="service1" id="service1_pic">
+            </div>
+            
+            <div class = "service-box">
+                <p id = "point1">ポイント２</p>
+                <p id = "service2">広告や発言力の強い個人の意見に<br>惑わされない</p>
+                <img src="image/what_you_can_do2.png" alt="service2" id="service2_pic">
+            </div>
+
+            <div class = "service-box">
+                <p id = "point1">ポイント３</p>
+                <p id = "service3">自分の「好き」と似た人と<br>出会える（かも！）</p>
+                <img src="image/what_you_can_do3.png" alt="service3" id="service3_pic">
+            </div>
+        </div>
+        
+    </div>
+
+
+    <!-- 会員登録 -->
+    <div class="memberReg" id="register">Buridyになる</div>
+
+        <div class="register-container">
+            <div class="form-container">
+
+            <form method="POST" action="register.php">
+
+            
+            <div class="form-group">
+                <label for="username">ユーザー名<br>User Name</label>
+                <input type="text" id="username" name="username" placeholder="ユーザー名 / User Name" autocomplete="username">
+            </div>
+
+            <div class="form-group">
+                <label>性別<br>Gender</label>
+                <div class="gender-options">
+                    <label>
+                        <input type="radio" id="male" name="gender" value="male">
+                        男性<br>Male
+                    </label>
+
+                    <label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        女性<br>Female
+                    </label>
+
+                    <label>
+                        <input type="radio" id="no-answer" name="gender" value="no-answer">
+                        答えたくない<br>No answer
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="birthday">生年月日<br>Birthday</label>
+                <input type="date" id="birthday" name="birthday" placeholder="生年月日 / Birthday">
+            </div>
+
+            <div class="form-group">
+                <label for="email">メール<br>email</label>
+                <input type="email" id="email" name="email" placeholder="メールアドレス / email" autocomplete="email">
+            </div>
+
+            <div class="form-group">
+                <label for="password">パスワード<br>Password</label>
+                <input type="password" id="password" name="password" placeholder="パスワード / Password" autocomplete="new-password">
+            </div>
+
+            <button type="submit">登録 / Register</button>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+
